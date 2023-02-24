@@ -3,8 +3,8 @@
 
 NUMBER=1
 
-while [ "$[NUMBER}" -le 10 ]
+while [ "${NUMBER}" -le 10 ]
 do 
 echo "Best School"
-NUMBER=$(NUMBER +1))
+NUMBER=$((NUMBER +1))
 done
