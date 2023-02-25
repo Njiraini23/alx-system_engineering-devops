@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-#This script is displaying "Best School" 10 times using until loop
+# This script is displaying "Best School" 10 times using until loop
 
 NUMBER=1
-until ["${NUMBER}" -gt 10 ]
+until [ "${NUMBER}" -gt 10 ]
 do
 echo "Best School"
 NUMBER=$((NUMBER + 1))
