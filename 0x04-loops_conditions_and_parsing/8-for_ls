@@ -5,3 +5,4 @@
 for element in *; do
     echo "${element}" | cut -d '-' -f2
 done
+
