@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# implementing the script manage_my_process to print indifently I am alive! into a tmp file
+
+while true; do
+    echo "I am alive!" >> /tmp/my_process
+    sleep 2
+done
+
