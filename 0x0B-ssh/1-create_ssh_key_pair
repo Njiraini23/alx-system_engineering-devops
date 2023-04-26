@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#file configuration
+ssh-keygen -f school -b 4096 -N betty
