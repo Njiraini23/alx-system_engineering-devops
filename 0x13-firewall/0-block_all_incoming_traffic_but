@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# installs ufw firewall and configures rules
+# except for TCP ports 22, 443 and 80.
+
+sudo apt-get install ufw
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh
+sudo ufw allow 443
+sudo ufw allow http
+sudo ufw disable
+sudo ufw enable
