@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ querie sthe Reddit API and prints titles of
 the first 10 hot posts for a given subreddit """
+import requests
 
 
 def top_ten(subreddit):
@@ -10,7 +11,7 @@ def top_ten(subreddit):
     headers = {'User-Agent': 'Mozilla/5.0'}
 
     try:
-        response = request.get(url, headers=headers)
+        response = requests.get(url, headers=headers)
         if response.status_code == 200:
             data = response.json()
             children = data.get('data').get('children')
