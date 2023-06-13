@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """A recursive function that querries reddit API
 """
+import requests
 
 
 def recurse(subreddit, hot_list=[]):
