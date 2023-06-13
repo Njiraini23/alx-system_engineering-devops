@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" querie sthe Reddit API and prints titles of 
+""" querie sthe Reddit API and prints titles of
 the first 10 hot posts for a given subreddit """
 
 
 def top_ten(subreddit):
-    """querries the Reddit API and prints the 
+    """querries the Reddit API and prints the
     titles of the first 10 hot posts """
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     headers = {'User-Agent': 'Mozilla/5.0'}
@@ -20,4 +20,3 @@ def top_ten(subreddit):
             print('None')
     except request.exceptions.RequestException:
         print('None')
-
